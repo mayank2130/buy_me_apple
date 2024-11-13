@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import CarouselCards from "./components/Card.tsx";
+import CodeSnippetComponent from "./components/CodeSnippetComponent.tsx";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-slate-50 h-screen flex flex-col justify-center items-center mx-auto">
+      <h1 className="font-serif text-2xl md:text-6xl top-28 absolute">
+        Buy me a _______
+      </h1>
+      <CarouselCards />
+      <CodeSnippetComponent />
     </div>
   );
-}
+};
 
 export default App;
